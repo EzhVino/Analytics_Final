@@ -2,7 +2,7 @@ const collection = document.querySelectorAll('.subscription-form-input[type="pas
 
 
 collection.forEach(element => {
-    element.addEventListener('change', function () {
+    element.addEventListener('input', function () {
         const passEl = document.querySelector('.subscription_new-user_pass-input');
         const confirmPassEl = document.querySelector('.subscription_new-user_confirm-pass-input');
         if (confirmPassEl.value !== passEl.value) {
